@@ -23,7 +23,7 @@
 %\details{}
 
 \source{
-  Cedergreen, N. and Madsen, T. V. (2002) Nitrogen uptake by the floating macrophyte \it{Lemna minor},
+  Cedergreen, N. and Madsen, T. V. (2002) Nitrogen uptake by the floating macrophyte \emph{Lemna minor},
   \emph{New Phytologist}, \bold{155}, 285--292. 
 }
 

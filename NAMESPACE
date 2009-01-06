@@ -1,3 +1,3 @@
 ## functions
-export(bcSummary, boxcox.nls, confint2)
+export(bcSummary, boxcox.nls, confint2, SSexp)
 

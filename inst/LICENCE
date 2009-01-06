@@ -1,12 +1,12 @@
 
-The package 'nonlin' provides functionality for non-linear regression analysis.
+The package 'nlrwr' is support software for the book "Nonlinear regression with R.
 
 Copyrights
 ==========
 
 Our understanding is that all data sets are not copyright.
 
-All other files are copyright (C) 2006 Christian Ritz and Jens C. Streibig.
+All other files are copyright (C) 2008 Christian Ritz and Jens C. Streibig.
 
 
 Licence
@@ -31,5 +31,5 @@ The file COPYING in the R top-level directory is a copy of the 'GNU
 General Public License'.
 
 
-ritz@bioassay.dk
+ritz@life.ku.dk
 streibig@bioassay.dk

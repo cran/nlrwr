@@ -8,7 +8,7 @@
 
 \description{
   Test data from a 21 day fish test following the guidelines OECD GL204, 
-  using the test organism \emph{Oncorhynchus mykiss}.
+  using the test organism Rainbow trout \emph{Oncorhynchus mykiss}.
 }
 
 \usage{data(O.mykiss)}
@@ -31,7 +31,7 @@
   Paris (p. 65).
 }
 
-%\references{}
+\references{}
 
 \examples{
 

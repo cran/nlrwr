@@ -1,0 +1,12 @@
+citHeader("To cite the package 'nlrwr' in publications use:")
+
+citEntry(
+entry="Book",
+title = "Nonlinear Regression with R",
+author = personList(as.person("C. Ritz"), as.person("J. C. Streibig")),
+address = "New York",
+publisher = "Springer",
+year = 2008,
+
+textVersion = paste("Ritz, C. & Streibig, J. C. (2008)", "Nonlinear Regression with R", "Springer, New York")
+)

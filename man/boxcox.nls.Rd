@@ -44,7 +44,7 @@
 
 \value{
   An object of class \code{\link{nls}} (returned invisibly). 
-  If plotit = TRUE a plot of loglik vs lambda is shown indicating a confidence interval (by default 95%) about 
+  If plotit = TRUE a plot of loglik vs lambda is shown indicating a confidence interval (by default 95\%) about 
   the optimal lambda value.
 }
 
@@ -62,22 +62,23 @@
 \examples{
 
 ## Fitting log-logistic model without transformation
-m1<-nls(rootl~c+(d-c)/(1+(conc/e)^b),data=ryegrass, start=list(b=1,c=0,d=8,e=3))
-summary(m1)
+ryegrass.m1<-nls(rootl~c+(d-c)/(1+(conc/e)^b),data=ryegrass, start=list(b=1,c=0,d=8,e=3))
+summary(ryegrass.m1)
 
 ## Fitting the same model with optimal Box-Cox transformation
-m2 <- boxcox(m1)
-summary(m2)
+ryegrass.m2 <- boxcox(ryegrass.m1)
+summary(ryegrass.m2)
+bcSummary(ryegrass.m2)
 
 ## Fitting the Michaelis-Menten model without self starter
 L.minor.m1 <- nls(rate ~ Vm*conc/(K+conc), data = L.minor, start = list(K=20, Vm=120))
-boxcox(L.minor.m1)
+L.minor.m2 <- boxcox(L.minor.m1)
+bcSummary(L.minor.m2)
 
 ## Fitting the Michaelis-Menten model with self starter
-L.minor.m2 <- nls(rate ~ SSmicmen(conc, Vm, K), data = L.minor)
-L.minor.m3 <- boxcox(L.minor.m2)
-
-L.minor.m3$lambda
+L.minor.m3 <- nls(rate ~ SSmicmen(conc, Vm, K), data = L.minor)
+L.minor.m4 <- boxcox(L.minor.m3)
+bcSummary(L.minor.m4)
 
 }
 
