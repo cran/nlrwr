@@ -1,3 +1,5 @@
 ## Changes in 'nlrwr'
 
+2011-10-31: The Box-Cox transformation boxcox.nls() has been changed to ensure that the predict method works also for transformed models (after a report from Jaime Felipe Medina Sotomayor).
+
 2009-03-24: The dataset 'algae' has been removed.

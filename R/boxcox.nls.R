@@ -103,7 +103,7 @@ eps = 1/50, bcAdd = 0, level = 0.95, xlab = expression(lambda), ylab = "log-like
     assign("bcFct2", bfFct2(lv), envir = .GlobalEnv) 
     retFit <- update(object, formula. = newFormula, start = startVec, trace = FALSE)  
     # last time 'bcFct1' and 'bcFct2' are used
-    rm(bcFct1, bcFct2, envir = .GlobalEnv)    
+#    rm(bcFct1, bcFct2, envir = .GlobalEnv)  # to ensure that the predict method can find bcFct2()
     retFit$lambda <- list(lambda = lv, ci = ci)
     invisible(retFit)
 }
